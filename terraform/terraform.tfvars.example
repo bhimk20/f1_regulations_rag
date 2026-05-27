@@ -1,0 +1,19 @@
+aws_region         = "us-east-1"
+project_name       = "f1-regs-rag"
+environment        = "dev"
+
+# Provider Settings
+model_provider     = "bedrock"  # "bedrock" or "gemini"
+embedding_provider = "bedrock"  # "bedrock" or "gemini"
+
+# Models Config
+bedrock_model_id   = "amazon.nova-micro-v1:0"
+gemini_model_id    = "gemini-2.0-flash"
+
+# Google Gemini API key (Required if model_provider or embedding_provider is "gemini")
+# Obtain from https://aistudio.google.com
+gemini_api_key     = "AIzaSy..."
+
+# RDS Settings
+db_name            = "f1_regs_db"
+db_username        = "postgres"
